@@ -1,1 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A simple beginner assignment about responsive web design.">
+	<title>Responsive Web Design Assignment</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header id="top">
+		<!-- Task 3 starts here: Bootstrap responsive navigation bar. -->
+		<nav id="task-3" class="navbar navbar-expand-lg navbar-custom" aria-label="Task 3: Bootstrap navigation bar">
+			<div class="container">
+				<a class="navbar-brand logo" href="#top">Task 3: My Website</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainNavigation">
+					<ul class="navbar-nav ms-auto align-items-lg-center">
+						<li class="nav-item"><a class="nav-link" href="#media-queries">Media queries</a></li>
+						<li class="nav-item"><a class="nav-link" href="#bootstrap-grid">Bootstrap grid</a></li>
+						<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link" href="#portfolio">Task 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="intro container" aria-labelledby="page-title">
+			<p>Assignment 3</p>
+			<h1 id="page-title">Responsive Web Design</h1>
+			<p>This page shows how a website changes on phones, tablets, and computers.</p>
+		</section>
+
+		<!-- Task 0 starts here: Responsive typography. -->
+		<section class="section text-section" id="media-queries" aria-labelledby="part-one-title">
+			<div class="container">
+				<div class="heading">
+					<h2 id="part-one-title">Task 0: Responsive Typography</h2>
+					<p>The heading and paragraph change size on mobile, tablet, and desktop.</p>
+				</div>
+				<div class="example">
+					<h3>This is a sample heading</h3>
+					<p>This is a sample paragraph. Its font size changes when the screen gets wider.</p>
+					<div class="screen-sizes" aria-label="Typography breakpoints">
+						<p>Mobile: less than 600px</p>
+						<p>Tablet: 600px to 899px</p>
+						<p>Desktop: 900px and wider</p>
+					</div>
+				</div>
+
+				<!-- Task 1 starts here: CSS-only responsive boxes. -->
+				<div class="heading boxes-heading">
+					<h2>Task 1: Responsive Boxes</h2>
+					<p>These boxes use CSS only. There are three in a row on desktop, two on tablet, and one on mobile.</p>
+				</div>
+				<div class="boxes" aria-label="Three responsive boxes">
+					<article class="box"><h3>Box 1</h3><p>This is the first box.</p></article>
+					<article class="box"><h3>Box 2</h3><p>This is the second box.</p></article>
+					<article class="box"><h3>Box 3</h3><p>This is the third box.</p></article>
+				</div>
+				<p>No Bootstrap is used for these boxes.</p>
+			</div>
+		</section>
+
+		<!-- Task 2 starts here: Bootstrap responsive columns. -->
+		<section class="section columns-section" id="bootstrap-grid" aria-labelledby="part-two-title">
+			<div class="container">
+				<div class="heading">
+					<h2 id="part-two-title">Task 2: Bootstrap Columns</h2>
+					<p>Bootstrap uses 12 columns. These three columns change size for different screens.</p>
+				</div>
+				<div class="row g-3">
+					<div class="col-12 col-sm-6 col-lg-4">
+						<article class="column"><h3>Column 1</h3><p>This column is 4 wide on desktop.</p></article>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<article class="column"><h3>Column 2</h3><p>Two columns fit on the first row on tablet.</p></article>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<article class="column"><h3>Column 3</h3><p>This column moves to a new row on tablet.</p></article>
+					</div>
+				</div>
+				<p>A Bootstrap row has 12 columns.</p>
+			</div>
+		</section>
+
+		<!-- Task 4 starts here: Responsive portfolio using Bootstrap and media queries. -->
+		<section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+			<div class="container">
+				<h2 id="portfolio-title">Task 4: My Portfolio</h2>
+				<p>This page uses a Bootstrap grid and CSS media queries.</p>
+
+				<div class="row g-4">
+					<div class="col-12 col-lg-8">
+						<h3>My Projects</h3>
+						<div class="row g-3">
+							<div class="col-12 col-md-6">
+								<article class="project"><div class="project-text"><h4>Project 1</h4><p>This is a sample project.</p></div></article>
+							</div>
+							<div class="col-12 col-md-6">
+								<article class="project"><div class="project-text"><h4>Project 2</h4><p>This is another sample project.</p></div></article>
+							</div>
+							<div class="col-12">
+								<article class="project"><div class="project-text"><h4>Project 3</h4><p>Add a short description of your project.</p></div></article>
+							</div>
+						</div>
+					</div>
+
+					<aside class="col-12 col-lg-4" aria-labelledby="about-title">
+						<div class="about">
+							<h3 id="about-title">About Me</h3>
+							<p>My name is Your Name. I am learning to make websites.</p>
+							<dl class="personal-info">
+								<div><dt>Group</dt><dd>Your Group</dd></div>
+								<div><dt>Email</dt><dd>yourname@example.com</dd></div>
+							</dl>
+							<a class="contact" href="mailto:yourname@example.com">Contact Me</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container"><p>Assignment 3: Responsive Web Design</p><a href="#top">Back to top</a></div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
