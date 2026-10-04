@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-custom {
+  background-color: #eeeeee;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.text-section,
+.project {
+  background-color: #f2f2f2;
+}
+
+.example,
+.box,
+.column,
+.project,
+.about {
+  padding: 15px;
+  border: 2px solid #333333;
+}
+
+.example {
+  background-color: white;
+}
+
+.example h3 {
+  font-size: 20px;
+}
+
+.example p {
+  font-size: 14px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.box {
+  background-color: #f2f2f2;
+}
+
+.columns-section {
+  background-color: #eeeeee;
+}
+
+.column {
+  min-height: 140px;
+  background-color: white;
+}
+
+.project {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.project-text h4 {
+  margin-top: 0;
+}
+
+.about {
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+.contact {
+  display: inline-block;
+  padding: 8px;
+  background-color: white;
+}
+
+.footer {
+  padding: 15px 0;
+  background-color: #eeeeee;
+}
+
+/* Task 0: make the text larger on tablets and computers. */
+@media (min-width: 600px) {
+  .example h3 {
+    font-size: 26px;
+  }
+
+  .example p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .example h3 {
+    font-size: 32px;
+  }
+
+  .example p {
+    font-size: 20px;
+  }
+}
+
+/* Task 1: show two boxes on tablets and three on computers. */
+@media (min-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .boxes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Task 4: change the portfolio spacing and heading size on small screens. */
+@media (max-width: 599px) {
+  .portfolio {
+    padding: 20px 0;
+  }
+
+  .portfolio h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .portfolio {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .portfolio {
+    padding: 45px 0;
+  }
+}
